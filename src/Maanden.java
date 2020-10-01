@@ -3,51 +3,60 @@ import java.util.Scanner;
 public class Maanden {
     public static void main(String[] args) {
         //variabele s voor gebruikersinvoer getal
-        var s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("Voer een getal tussen de 1 en de 12 in");
         //koppel de variabele getal aan het ingevoerde getal
-        var getal = s.nextInt();
+        int getal = s.nextInt();
+        String maand;
+        String connect = " is de maand ";
+
+
         //switch statement
         switch (getal) {
             case 1:
-                System.out.println("januari");
+                maand = "januari";
                 break;
             case 2:
-                System.out.println("februari");
+                maand = "februari";
                 break;
             case 3:
-                System.out.println("maart");
+                maand = "maart";
                 break;
             case 4:
-                System.out.println("april");
+                maand = "april";
                 break;
             case 5:
-                System.out.println("mei");
+                maand = "mei";
                 break;
             case 6:
-                System.out.println("juni");
+                maand = "juni";
                 break;
             case 7:
-                System.out.println("juli");
+                maand = "juli";
                 break;
             case 8:
-                System.out.println("augustus");
+                maand = "augustus";
                 break;
             case 9:
-                System.out.println("september");
+                maand = "september";
                 break;
             case 10:
-                System.out.println("oktober");
+                maand = "oktober";
                 break;
             case 11:
-                System.out.println("november");
+                maand = "november";
                 break;
             case 12:
-                System.out.println("december");
+                maand = "december";
                 break;
             default:
-                System.out.println("foutieve invoer");
+                System.out.println("foutieve invoer: exciting!");
+                maand = "dacht het niet";
+                connect = " Wat dacht je zelf? ";
+                break;
+
         }
+        System.out.println(getal + connect + maand);
 
 
     }
